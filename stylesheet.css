@@ -16,18 +16,28 @@ body {
     text-align:center;
     
 }
-.display{
+.display-box{
     justify-content: stretch;
     align-items: center;
+    text-align: Center;
     border-radius: 10px;
     background-color: white;
     margin-left: 60px;
     margin-right:60px;
 }
-.row {
-    display:flex;
-    justify-content: space-around;
-    padding: 25px;
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    width: 500px; 
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+button {
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 20%;
 }
 .box {
     padding-top: 20px;
@@ -36,13 +46,4 @@ body {
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 50px;
-}
-.button {
-    font-family: monospace;
-    font-size: 30px;
-    border-radius: 100%;
-    min-height: 75px;
-    min-width: 75px;
-    border-width: 2px;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
 }
